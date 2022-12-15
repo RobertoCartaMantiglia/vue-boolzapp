@@ -1,13 +1,11 @@
 header{
-    height: 50px;
-    background-color: blueviolet;
+    height: 40px;
+    background-color: #eaeaea;
 }
 main{
-    height: calc(90vh - 50px);
+    height: 80vh;
     background-color: aqua;
 }
-.user-section{
-    height: 50px;
-    background-color: aqua;
-    border: 1px solid white;
+ul{
+    list-style-type: none;
 }

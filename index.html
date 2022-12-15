@@ -18,19 +18,29 @@
         <header class="container">
                 <div class="row">
                     <div class="col-4 user-section">
-                        <h2>Boolzapp</h2>
+                        <p>Boolzapp</p>
                     </div>
-                    <div class="col-8 name-contact-section">
-                        <h2>Nome Contatto</h2>
+                    <div class="col-8 name-contact-section d-flex justify-content-between">
+                        <div>
+                            <p>img/nome</p>
+                        </div>
+                        <div>
+                            <p>items</p>
+                        </div>
                     </div>
                 </div>
         </header>
 
         <main class="container">
                 <div class="row h-100">
-                    <div class="col-4 border border-white">
+                    <div class="col-4 my-contacts border border-white">
+                        <ul class="text-start">
+                            <li v-for="contact in contacts">
+                                {{contact.avatar}} {{contact.name}} 
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 border border-white">
                     </div>
                 </div>
 
