@@ -178,8 +178,20 @@ createApp({
                 }
             ],
         }
-    ]
+    ],
+    userText: '',
     
+    }
+},
+methods : {
+    addNewMessage(){
+        let newMessage = {
+            date: '',
+            message: this.userText,
+            status: 'received',
+        }
+
+
     }
 }
 }).mount('#app')
