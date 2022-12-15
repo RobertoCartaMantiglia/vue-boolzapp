@@ -26,3 +26,20 @@ img{
     bottom: 0;
     width: 100%;
 }
+.my-contact-message,
+.my-message{
+    border-radius: 0.5rem;
+    position: absolute;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+}
+.my-message{
+    right: 3rem;
+    top:5px;
+    background-color: #d5f9ba;
+}
+.my-contact-message{
+    top: 3rem;
+    left: 3rem;
+    background-color: white;
+}

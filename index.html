@@ -54,7 +54,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-8 border border-white content-messages position-relative">                
+                <div class="col-8 border border-white content-messages position-relative"> 
+                    <!-- qui verrà inserito il valore del messaggio del interlocutore e del utente -->
+                    <div class="w-25 my-message">
+                        <p>Hai portato fuori il cane?</p>  
+                    </div>   
+                    <div class="w-25  my-contact-message ">
+                        <p>tutto fatto</p>  
+                    </div>
+                    
+
                     <div class="form-floating align-self-end input-text">
                         <textarea class="form-control" v-model="userText"></textarea>
                         <label for="floatingTextarea"></label>
