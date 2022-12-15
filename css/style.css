@@ -2,11 +2,12 @@ header{
     height: 40px;
     background-color: #eaeaea;
 }
-main{
-    background-color: aqua;
-}
+
 ul{
     list-style-type: none;
+}
+.my-contacts{
+    background-color: rgb(241, 241, 241);    
 }
 .content-messages{
     background-image: url('../img/mine.jpg');

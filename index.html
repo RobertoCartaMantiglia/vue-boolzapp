@@ -34,11 +34,20 @@
         <main class="container">
                 <div class="row">
                     <div class="col-4 my-contacts border border-white">
-                        <ul class="text-start">
-                            <li v-for="contact in contacts">
-                                {{contact.avatar}} {{contact.name}} 
-                            </li>
-                        </ul>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                          
+                        <div>
+                            <ul>
+                                <li v-for="contact in contacts">
+                                    {{contact.avatar}} {{contact.name}} 
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-8 border border-white content-messages position-relative">
                         <div class="bg-danger align-self-end input-text">

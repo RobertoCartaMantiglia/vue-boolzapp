@@ -13,8 +13,7 @@ createApp({
             {
                 name: 'Camilla',
                 avatar: './img/',
-                visible: true,
-               
+                visible: true,               
             },
         ],
       contacts: [
