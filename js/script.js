@@ -2,8 +2,6 @@
 // Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
 // Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto
 
-
-
 const { createApp } = Vue
 
 createApp({
@@ -14,6 +12,7 @@ createApp({
             name: 'Claudia',
             avatar: '_io',
             visible: true,
+            messages: [],
         },
        ],
       contacts: [
@@ -186,9 +185,12 @@ createApp({
 methods : {
     addNewMessage(){
         let newMessage = {
-            date: '',
+            date: '10/01/2020 15:51:00',
             message: this.userText,
             status: 'received',
+        }
+        if(newMessage.message != ''){
+            this.myContacts.messages.push(newMessage);
         }
 
 
