@@ -9,7 +9,10 @@ main{
 ul{
     list-style-type: none;
 }
-
+li img{
+    width: 50px;
+    border-radius: 50%;
+}
 .my-contacts{
     background-color: rgb(241, 241, 241);    
 }
