@@ -2,7 +2,9 @@ header{
     height: 40px;
     background-color: #eaeaea;
 }
-
+main{
+    height: 400px;
+}
 ul{
     list-style-type: none;
 }

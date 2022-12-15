@@ -16,46 +16,47 @@
     <div id="app">
 
         <header class="container">
-                <div class="row">
-                    <div class="col-4 user-section">
-                        <p>Boolzapp</p>
+            <div class="row">
+                <div class="col-4 user-section">
+                    <p>Boolzapp</p>
+                </div>
+                <div class="col-8 name-contact-section d-flex justify-content-between">
+                    <div>
+                        <p>img/nome</p>
                     </div>
-                    <div class="col-8 name-contact-section d-flex justify-content-between">
-                        <div>
-                            <p>img/nome</p>
-                        </div>
-                        <div>
-                            <p>items</p>
-                        </div>
+                    <div>
+                        <p>items</p>
                     </div>
                 </div>
+            </div>
         </header>
 
         <main class="container">
-                <div class="row">
-                    <div class="col-4 my-contacts border border-white">
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
-                            <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                          
-                        <div>
-                            <ul>
-                                <li v-for="contact in contacts">
-                                    {{contact.avatar}} {{contact.name}} 
-                                </li>
-                            </ul>
-                        </div>
+            <div class="row">
+                <div class="col-4 my-contacts border border-white">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                     </div>
-                    <div class="col-8 border border-white content-messages position-relative">
-                        <div class="bg-danger align-self-end input-text">
-                            <p>text messages</p>
-                        </div>
+                        
+                    <div class="contact-list">
+                        <ul>
+                            <li v-for="contact in contacts">
+                                <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#" class="w-25">
+                                <span>{{contact.name}} </span>
+                            </li>
+                        </ul>
                     </div>
-                    
                 </div>
+                <div class="col-8 border border-white content-messages position-relative">
+                    <div class="bg-danger align-self-end input-text">
+                        <p>text messages</p>
+                    </div>
+                </div>
+                
+            </div>
 
         </main>
 
