@@ -9,3 +9,11 @@ main{
 ul{
     list-style-type: none;
 }
+.content-messages{
+    background-image: url('../img/mine.jpg');
+}
+.input-text{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

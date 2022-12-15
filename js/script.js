@@ -9,6 +9,14 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        myProfile: [
+            {
+                name: 'Camilla',
+                avatar: './img/',
+                visible: true,
+               
+            },
+        ],
       contacts: [
         {
             name: 'Michele',
