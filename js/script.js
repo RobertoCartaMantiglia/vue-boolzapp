@@ -9,7 +9,13 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-       
+       myContacts:[
+        {
+            name: 'Claudia',
+            avatar: '_io',
+            visible: true,
+        },
+       ],
       contacts: [
         {
             name: 'Michele',
