@@ -2,3 +2,12 @@ header{
     height: 50px;
     background-color: blueviolet;
 }
+main{
+    height: calc(90vh - 50px);
+    background-color: aqua;
+}
+.user-section{
+    height: 50px;
+    background-color: aqua;
+    border: 1px solid white;
+}
