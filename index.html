@@ -82,7 +82,8 @@
                         
                     <div class="contact-list">
                         <ul>
-                            <li v-for="contact in contacts" class="mb-2">
+                            <li v-for="(contact, index) in contacts"  class="mb-2"
+                                :class="(activeIndex = index) ? '' : '' ">
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
                                 <span>{{contact.name}} </span>
                             </li>
