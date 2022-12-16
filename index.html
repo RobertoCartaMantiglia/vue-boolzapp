@@ -91,7 +91,9 @@
                 </div>
                 <div class="col-8 content-messages p-4 position-relative"> 
                     <!-- qui verrà inserito il valore del messaggio del interlocutore e del utente -->
-                    <div v-for="messageObj in contacts[activeIndex].messages" class="w-25 my-message m-2">
+                    <div v-for="messageObj in contacts[activeIndex].messages" 
+                        :class="(messageObj.status = 'sent') ? 'my-message': '' " class="w-25  m-2">
+                    </div>                        
                         {{messageObj.message}}
                     </div>   
                     <div class="w-25  my-contact-message ">
