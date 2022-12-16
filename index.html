@@ -82,7 +82,7 @@
                         
                     <div class="contact-list">
                         <ul>
-                            <li v-for="contact in contacts"  class="mb-2"                                
+                            <li v-for="contact in contacts"  class="mb-2">                             
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
                                 <span>{{contact.name}} </span>
                             </li>
@@ -91,8 +91,8 @@
                 </div>
                 <div class="col-8 content-messages p-4 position-relative"> 
                     <!-- qui verrà inserito il valore del messaggio del interlocutore e del utente -->
-                    <div v-for="message in messages[0].contacts" class="w-25 my-message">
-                        {{message.message}}
+                    <div v-for="messageObj in contacts[activeIndex].messages" class="w-25 my-message m-2">
+                        {{messageObj.message}}
                     </div>   
                     <div class="w-25  my-contact-message ">
                         <p>tutto fatto</p>  

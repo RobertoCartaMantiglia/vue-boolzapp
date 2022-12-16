@@ -194,17 +194,17 @@ methods : {
         this.activeIndex === currentIndex;
     },
 
-    addNewMessage(){
-        let newMessage = {
-            date: '10/01/2020 15:51:00',
-            message: this.userText,
-            status: 'received',
-        }
-        if(newMessage.message != ''){
-            this.myContacts.messages.push(newMessage);
-        }
+    // addNewMessage(){
+    //     let newMessage = {
+    //         date: '10/01/2020 15:51:00',
+    //         message: this.userText,
+    //         status: 'sent',
+    //     }
+    //     if(newMessage.message != ''){
+    //         this.myContacts.messages.push(newMessage);
+    //     }
 
 
-    }
+    // }
 }
 }).mount('#app')
