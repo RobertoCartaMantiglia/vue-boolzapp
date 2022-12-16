@@ -20,29 +20,61 @@
 
         <header class="container">
             <div class="row">
-                <div class="col-4 user-section pt-1">
-                    <img :src="`./img/avatar_io.jpg`" alt="#">
-                    <span>Claudia</span>
+                <div class="col-4 user-section pt-1 d-flex justify-content-between">
+                   <div>
+                        <img :src="`./img/avatar_io.jpg`" alt="#">
+                        <span>Claudia</span>
+                   </div>
+                   <div class="items">
+                       <span>
+                        <i class="fa-solid fa-circle-notch"></i>
+                       </span>
+                       <span>
+                        <i class="fa-solid fa-message"></i>
+                       </span>
+                       <span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                       </span>                
+                   </div>
                 </div>
                 <div class="col-8 d-flex justify-content-between">
-                    <div>
-                        <p>img/nome</p>
+                    <div class="pt-1">
+                        <img :src="`./img/avatar_1.jpg`" alt="#">
+                        <span>Michele</span>
                     </div>
-                    <div>
-                        <p>items</p>
+                    <div class="items">
+                        <span>
+                         <i class="fa-solid fa-circle-notch"></i>
+                        </span>
+                        <span>
+                         <i class="fa-solid fa-message"></i>
+                        </span>
+                        <span>
+                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </span>                
                     </div>
                 </div>
             </div>
         </header>
 
         <main class="container">
-            <div class="row">
-                <div class="col-4 my-contacts border border-white">
+            <div class="row ">
+                <div class="col-4 p-0 my-contacts border border-white">
+
+                    <div class="alert-messages-section">
+                        <span>
+                            <i class="fa-solid fa-bell-slash bell"></i>     
+                        </span> 
+                       <span> 
+                            Ricevi notifiche di nuovi messaggi
+                       </span>         
+                    </div>
+
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control"  aria-describedby="inputGroup-sizing-sm">
                     </div>
                         
                     <div class="contact-list">
