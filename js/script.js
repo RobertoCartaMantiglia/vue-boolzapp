@@ -191,7 +191,7 @@ createApp({
 methods : {
 
     actualConversation(currentIndex){
-        this.activeIndex === currentIndex;
+        this.activeIndex = currentIndex;
     },
 
     // addNewMessage(){
