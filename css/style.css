@@ -55,18 +55,18 @@ img{
     bottom: 0;
     width: 100%;
 }
-.my-contact-message,
-.my-message{
+.sent,
+.received{
     clear: both;
     border-radius: 0.5rem;
     padding-top: 0.3rem;
     padding-left: 0.3rem;
 }
-.my-message{
+.sent{
     float: right;
     background-color: #d5f9ba;
 }
-.my-contact-message{
+.received{
     float: left;
     background-color: white;
 }
