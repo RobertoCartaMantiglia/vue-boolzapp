@@ -201,7 +201,8 @@ methods : {
             status: 'sent',
         }
         if(newMessage.message != ''){
-            this.contacts.push(newMessage);           
+            this.contacts[this.activeIndex].messages.push(newMessage); 
+            this.myNewMessage = '';          
         }else{
             alert("scrivi qualcosa");
         }
