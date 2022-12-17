@@ -184,7 +184,7 @@ createApp({
             ],
         }
     ],
-    userText: '',
+    myNewMessage: '',
     activeIndex: 0,
     }
 },
@@ -194,17 +194,19 @@ methods : {
         this.activeIndex = currentIndex;
     },
 
-    // addNewMessage(){
-    //     let newMessage = {
-    //         date: '10/01/2020 15:51:00',
-    //         message: this.userText,
-    //         status: 'sent',
-    //     }
-    //     if(newMessage.message != ''){
-    //         this.myContacts.messages.push(newMessage);
-    //     }
+    addNewMessage(){
+        let newMessage = {
+            date: '10/01/2020 15:51:00',
+            message: this.myNewMessage,
+            status: 'sent',
+        }
+        if(newMessage.message != ''){
+            this.contacts.push(newMessage);           
+        }else{
+            alert("scrivi qualcosa");
+        }
 
 
-    // }
+    }
 }
 }).mount('#app')
