@@ -99,7 +99,7 @@
 
                     <div class="form-floating align-self-end input-text">
                        <input type="text" placeholder="scrivi qualcosa" class="w-100" v-model="myNewMessage"
-                       :class="(newMessage.message != '') ? 'sent' : '' "  @keyup.enter="addNewMessage()"> 
+                        @keyup.enter="addNewMessage(myNewMessage)"> 
                                                 
                     </div>
                 </div>
