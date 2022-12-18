@@ -8,6 +8,10 @@
 // Click sul contatto mostra la conversazione del contatto cliccato
 
 
+// Milestone 3
+// Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
+// Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo
+
 const { createApp } = Vue
 
 createApp({
@@ -207,7 +211,18 @@ methods : {
             alert("scrivi qualcosa");
         }
 
+        setTimeout(this.autoMessage, 1000);        //set timeout 1s risposta automatica a schermo
 
+    },
+    //milestone 3: aggiunta una nuova funzione di automessage
+    autoMessage(){
+        let newAutoMessage = {
+            date: '10/01/2020 15:51:00',
+            message: 'ok',
+            status: 'received',
+        }        
+        this.contacts[this.activeIndex].messages.push(newAutoMessage);
+        
     }
 }
 }).mount('#app')
