@@ -199,7 +199,7 @@ createApp({
     }
 },
 methods : {
-
+    //milestone 2
     actualConversation(currentIndex){
         this.activeIndex = currentIndex;
     },
@@ -217,9 +217,10 @@ methods : {
             alert("scrivi qualcosa");
         }
 
-        setTimeout(this.autoMessage, 1000);      //set timeout 1s risposta automatica a schermo
+        setTimeout(this.autoMessage, 1000);  //aggiunto set timeout 1s risposta automatica a schermo
 
     },
+
     //milestone 3: aggiunta una nuova funzione di automessage
     autoMessage(){
         let newAutoMessage = {
@@ -230,10 +231,12 @@ methods : {
         this.contacts[this.activeIndex].messages.push(newAutoMessage);
         
     },
+
+    //milestone 4: funzione di ricerca nome
     serchContact(){
-        contacts.array.forEach(contact => {
+        this.contacts.forEach(contact => {
             if(this.newSerchInput != '' && this.newSerchInput.includes('f')){
-                this.newSerchInput.visible = true;
+                this.contact.name.toLocaleLowerCase()
             }
         });
     }

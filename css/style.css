@@ -31,7 +31,9 @@ img{
 .tools{
     margin: 1rem 0.4rem;
     color: #b0b0b0;
-
+}
+.contact-list{
+    overflow-y: scroll;
 }
 .my-contacts{
     background-color: rgb(241, 241, 241);    

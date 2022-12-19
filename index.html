@@ -60,7 +60,8 @@
                 </div>
             </div>
         </header>
-
+        
+<!-- colonna di sinistra -->
         <main class="container">
             <div class="row ">
                 <div class="col-4 p-0 my-contacts">
@@ -82,20 +83,26 @@
                         <input type="text" placeholder="cerca o inizia una nuova chat" v-model="newSerchInput"
                             @keyup.enter="serchContact()" class="form-control">
                     </div>
-                        
+                    
+  <!-- lista dei contatti -->
+
                     <div class="contact-list">
                         <ul>
                             <li class="position-relative mb-2" v-for="(contact, index) in contacts" @click="actualConversation(index)"
                                 :class="(activeIndex === index) ? 'active' : ''"  class="mb-2">                             
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
-                                <span class="position-absolute top-0">{{contact.name}}</span>
+                                <span class="position-absolute top-0">
+                                    {{contact.name}}
+                                </span>
                                 <p class="subtitle">Ultimo messaggio inviato</p>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+<!-- conversation area -->
+
                 <div class="col-8 content-messages p-4 position-relative"> 
-                    <!-- qui verrà inserito il valore del messaggio del interlocutore e del utente -->
                     <div v-for="messageObj in contacts[activeIndex].messages" 
                         class="w-25 m-2"
                         :class="(messageObj.status === 'sent') ? 'sent': 'received' ">
