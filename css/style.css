@@ -27,7 +27,8 @@ img{
 .wrapper{
     margin-top: 1rem;
 }
-.items span > i{
+.items span > i,
+.tools{
     margin: 1rem 0.4rem;
     color: #b0b0b0;
 
@@ -70,8 +71,7 @@ img{
 .received{
     clear: both;
     border-radius: 0.5rem;
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
+    padding: 0.5rem 0.7rem;
 }
 .sent{
     float: right;
@@ -80,4 +80,8 @@ img{
 .received{
     float: left;
     background-color: white;
+}
+.text-area{
+    width: 90%;
+    border: none;
 }

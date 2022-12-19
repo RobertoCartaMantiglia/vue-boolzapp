@@ -77,7 +77,7 @@
 
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass "></i>
                         </span>
                         <input type="text" placeholder="cerca o inizia una nuova chat" class="form-control"  aria-describedby="inputGroup-sizing-sm">
                     </div>
@@ -101,9 +101,15 @@
                         {{messageObj.message}}
                     </div>                                           
 
-                    <div class="form-floating align-self-end input-text">
-                       <input type="text" placeholder="scrivi qualcosa" class="w-100" v-model="myNewMessage"
-                        @keyup.enter="addNewMessage()"> 
+                    <div class="form-floating align-self-end input-text bg-light p-1 d-flex justify-content-between">
+                        <span>
+                            <i class="fa-regular fa-face-smile mt-3 fs-5 tools"></i>
+                        </span>
+                        <input type="text" placeholder="Scrivi un messaggio" class="text-area" v-model="myNewMessage"
+                            @keyup.enter="addNewMessage()"> 
+                        <span>
+                            <i class="fa-solid fa-microphone mt-3 fs-5 tools"></i>
+                        </span>
                                                 
                     </div>
                 </div>
