@@ -195,6 +195,7 @@ createApp({
     ],
     myNewMessage: '',
     activeIndex: 0,
+    newSerchInput: '',
     }
 },
 methods : {
@@ -228,6 +229,13 @@ methods : {
         }        
         this.contacts[this.activeIndex].messages.push(newAutoMessage);
         
+    },
+    serchContact(){
+        contacts.array.forEach(contact => {
+            if(this.newSerchInput != '' && this.newSerchInput.includes('f')){
+                this.newSerchInput.visible = true;
+            }
+        });
     }
 }
 }).mount('#app')
