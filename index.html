@@ -41,9 +41,9 @@
                    </div>
                 </div>
                 <div class="col-8 d-flex justify-content-between">
-                    <div class="pt-1">
-                        <img :src="`./img/avatar_1.jpg`" alt="#">
-                        <span>Michele</span>
+                    <div class="pt-1" v-for="contact in contacts[activeIndex]">
+                        <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
+                        <span>{{contacts[activeIndex].name}}</span>
                     </div>
                     <div class="items">
                         <span>
@@ -85,7 +85,7 @@
                         <ul>
                             <li v-for="(contact, index) in contacts" @click="actualConversation(index)"  class="mb-2">                             
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
-                                <span>{{contact.name}} </span>
+                                <span>{{contact.name}}</span>
                             </li>
                         </ul>
                     </div>
