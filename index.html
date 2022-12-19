@@ -41,9 +41,10 @@
                    </div>
                 </div>
                 <div class="col-8 d-flex justify-content-between">
-                    <div class="mt-1">
+                    <div class="mt-1 position-relative w-50">
                         <img :src="`./img/avatar${contacts[activeIndex].avatar}.jpg`" alt="#">
-                        <span>{{contacts[activeIndex].name}}</span>
+                        <span class="position-absolute top-0">{{contacts[activeIndex].name}}</span>
+                        <p class="subtitle">Ultimo accesso oggi alle 12:00</p>
                     </div>
                     <div class="items">
                         <span>
@@ -64,14 +65,14 @@
             <div class="row ">
                 <div class="col-4 p-0 my-contacts">
 
-                    <div class="alert-messages-section">
+                    <div class="alert-messages-section position-relative">
                         <span>
                             <i class="fa-solid fa-bell-slash bell"></i>     
                         </span> 
-                       <span> 
-                            Ricevi notifiche di nuovi messaggi
-                            <a href="#">attiva notifiche desktop</a>
-                       </span>         
+                       <span class="position-absolute bottom-50"> 
+                            Ricevi notifiche di nuovi messaggi                           
+                       </span>  
+                       <a class="position-absolute top-50" href="#">attiva notifiche desktop</a>       
                     </div>
 
                     <div class="input-group input-group-sm mb-3">
@@ -83,10 +84,11 @@
                         
                     <div class="contact-list">
                         <ul>
-                            <li v-for="(contact, index) in contacts" @click="actualConversation(index)"
+                            <li class="position-relative mb-2" v-for="(contact, index) in contacts" @click="actualConversation(index)"
                                 :class="(activeIndex === index) ? 'active' : ''"  class="mb-2">                             
                                 <img :src="`./img/avatar${contact.avatar}.jpg`" alt="#">
-                                <span>{{contact.name}}</span>
+                                <span class="position-absolute top-0">{{contact.name}}</span>
+                                <p class="subtitle">Ultimo messaggio inviato</p>
                             </li>
                         </ul>
                     </div>

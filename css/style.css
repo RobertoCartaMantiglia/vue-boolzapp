@@ -52,6 +52,14 @@ img{
 .active{
     background-color: #e9ebeb;
 }
+.subtitle{
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    font-size: 0.7rem;
+    color: #b0b0b0;
+  }
+
 .input-text{
     position: absolute;
     right: 0;
