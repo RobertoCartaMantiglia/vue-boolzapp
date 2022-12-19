@@ -49,6 +49,9 @@ img{
 .content-messages{
     background-image: url('../img/mine.jpg');
 }
+.active{
+    background-color: #e9ebeb;
+}
 .input-text{
     position: absolute;
     right: 0;
