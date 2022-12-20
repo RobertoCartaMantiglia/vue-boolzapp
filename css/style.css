@@ -24,6 +24,12 @@ img{
     width: 40px;
     border-radius: 50%;
 }
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
 .wrapper{
     margin-top: 1rem;
 }

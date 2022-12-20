@@ -81,7 +81,8 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="text" placeholder="cerca o inizia una nuova chat" v-model="newSerchInput"
-                            @keyup.enter="serchContact()" class="form-control">
+                           v-show="(newSerchInput === contacts.name) ? 'visible' : 'hidden'" 
+                           @keyup.enter="serchContact()" class="form-control">
                     </div>
                     
   <!-- lista dei contatti -->
